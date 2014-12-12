@@ -20,7 +20,7 @@
 <body>
   
 <header>
-  <div class="contain-to-grid sticky">
+  
     <nav class="top-bar" data-topbar role="navigation"> 
       <ul class="title-area"> 
         <li class="name"> 
@@ -45,7 +45,7 @@
         </ul> 
       </section> 
     </nav>
-  </div>
+  
 </header>
   <!-- body content here -->
     @yield('content')
@@ -62,7 +62,15 @@
   <script src="//maps.google.com/maps/api/js?sensor=true"></script>
   <script src="{{ URL::asset('js/main.js') }}"></script>
   <script>
-    $(document).foundation();
+    $(document).foundation({
+      "magellan-expedition": {
+      active_class: 'active', // specify the class used for active sections
+      threshold: 250, // how many pixels until the magellan bar sticks, 0 = auto
+      destination_threshold: 20, // pixels from the top of destination for it to be considered active
+      throttle_delay: 50, // calculation throttling to increase framerate
+      fixed_top: 0, // top distance in pixels assigned to the fixed element on scroll
+      }
+    });
   </script>
 </body>
 </html>

@@ -1,15 +1,27 @@
 @extends('layouts.default')
 
 @section('content')
+
+
 	<!-- first section - Home -->
 	<div id="home" class="home">
 	  <div class="text-vcenter">
-	    <h1>Hello World</h1>
-	    <h3>This is bootstrap-based layout</h3>
-	    <a href="#about" class="btn btn-default btn-lg">Continue</a>
+	    <h1>Kerberos</h1>
+	    <h3>IT Services</h3>
+	    <img src="../img/logo_alex.png" width="160" height="160"><br>
+	    <a href="#about" class="button">Continuar</a>
 	  </div>
 	</div>
 	<!-- /first section -->
+
+<div data-magellan-expedition="fixed"> 
+	<dl class="sub-nav"> 
+		<dd data-magellan-arrival="about"><a href="#about">About</a></dd> 
+		<dd data-magellan-arrival="services"><a href="#services">Services</a></dd> 
+		<dd data-magellan-arrival="information"><a href="#information">Information</a></dd> 
+		<dd data-magellan-arrival="services2"><a href="#services2">Services2</a></dd> 
+	</dl> 
+</div>
 
 	<!-- second section - About -->
 	<div id="about" class="pad-section">
@@ -87,7 +99,7 @@
 	<!-- /fourth section -->
 
 	<!-- fifth section -->
-	<div id="services" class="pad-section">
+	<div id="services2" class="pad-section">
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-sm-12 text-center">
